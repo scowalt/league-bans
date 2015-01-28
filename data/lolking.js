@@ -20,9 +20,9 @@ function getChampionStatistics(callback){
 		var table = [];
 		$('.champion-list > tbody > tr').each(function(index, row){
 			var champion = row.children[1].attribs['data-sortval'];
-			var popularity = row.children[7].attribs['data-sortval'];
-			var winRate = row.children[9].attribs['data-sortval'];
-			var banRate = row.children[11].attribs['data-sortval'];
+			var popularity = parseFloat(row.children[7].attribs['data-sortval']);
+			var winRate = parseFloat(row.children[9].attribs['data-sortval']);
+			var banRate = parseFloat(row.children[11].attribs['data-sortval']);
 			table.push({
 				champion: champion,
 				popularity: popularity,
