@@ -1,0 +1,7 @@
+{
+  "name": "league-bans",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.11.1"
+  }
+}
