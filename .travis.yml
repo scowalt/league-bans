@@ -3,3 +3,4 @@ deploy:
   app: league-bans
   api_key:
     secure: edUJltoSILo3SXdJMMgEjLli3AZwkUc0czt75bV8tw0YkMn7yHw813Arz1NNp1Br1cUMk2eJ35tirZH2tqk1knn3hYUyHf6y54i2l5CZcGa2lKaI6aCZ0SB5zeW48FoRQ1vKefB0hqULnW2IcfmGU55rIoFSrPpPwHKM+4bMHko=
+language: node_js
