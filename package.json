@@ -1,7 +1,11 @@
 {
   "name": "league-bans",
   "version": "0.0.1",
+  "private": true,
+  "author": "scowalt",
   "dependencies": {
-    "express": "^4.11.1"
+    "cheerio": "^0.18.0",
+    "express": "^4.11.1",
+    "request": "^2.51.0"
   }
 }
