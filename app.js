@@ -27,9 +27,9 @@ app.get('/', function (req, res){
 	}
 
 	function compareChampions(a,b){
-		if (a.strength > b.strength){
+		if (a.banScore > b.banScore){
 			return -1;
-		} else if (a.strength < b.strength){
+		} else if (a.banScore < b.banScore){
 			return 1;
 		} else {
 			return 0;
