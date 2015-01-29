@@ -21,7 +21,14 @@ router.get('/', function (req, res){
 			return onError();
 		}
 		data.sort(compareChampions);
+
+		var header = [];
+		for (var key in data[0]){
+			header.push(key);
+		}
+
 		res.status(200).render('index', {
+			header: header,
 			data: data
 		});
 	}

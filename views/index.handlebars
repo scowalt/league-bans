@@ -3,8 +3,19 @@
 	<title>League Bans</title>
 </head>
 <body>
-{{#each data}}
-	{{this.champion}} <br/>
-{{/each}}
+<table>
+	<thead>
+		{{#each header}}
+			<td>{{this}}</td>
+		{{/each}}
+	</thead>
+	{{#each data}}
+		<tr>
+			{{#each this}}
+				<td>{{this}}</td>
+			{{/each}}
+		</tr>
+	{{/each}}
+</table>
 </body>
 </html>
