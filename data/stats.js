@@ -10,7 +10,7 @@ function computeBanScores(champions, callback){
 		// estimated popularity if bans weren't allowed
 		var truePopularity = popularity + banRate * (popularity / notBanRate);
 
-		var banScore = truePopularity * winRate;
+		var banScore = truePopularity * (winRate - 50.0);
 
 		champions[index].banScore = banScore;
 	});
