@@ -21,7 +21,9 @@ router.get('/', function (req, res){
 			return onError();
 		}
 		data.sort(compareChampions);
-		res.status(200).send(data);
+		res.status(200).render('index', {
+			data: data
+		});
 	}
 
 	function compareChampions(a,b){
