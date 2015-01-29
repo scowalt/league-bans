@@ -5,15 +5,19 @@
 <body>
 <table>
 	<thead>
-		{{#each header}}
-			<td>{{this}}</td>
-		{{/each}}
+		<td>Champion</td>
+		<td>Popularity</td>
+		<td>Win Rate</td>
+		<td>Ban Rate</td>
+		<td>Ban Score</td>
 	</thead>
 	{{#each data}}
 		<tr>
-			{{#each this}}
-				<td>{{this}}</td>
-			{{/each}}
+			<td>{{this.champion}}</td>
+			<td>{{this.popularity}}%</td>
+			<td>{{this.winRate}}%</td>
+			<td>{{this.banRate}}%</td>
+			<td>{{this.banScore}}</td>
 		</tr>
 	{{/each}}
 </table>
