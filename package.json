@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "author": "scowalt",
-  "engines": { "node" : ">=0.10.3 <0.12" },
+  "engines": {
+    "node": ">=0.10.3 <0.12"
+  },
   "dependencies": {
     "cheerio": "^0.18.0",
     "express": "^4.11.1",
+    "express-handlebars": "^1.1.0",
     "request": "^2.51.0"
   }
 }
