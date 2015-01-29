@@ -42,6 +42,6 @@ app.get('/', function (req, res){
 });
 
 // START SERVER
-var server = app.listen(80, function(){
+var server = app.listen(process.env.PORT || 80, function(){
 	console.log('Listening');
 });
