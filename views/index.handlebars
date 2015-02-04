@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>League Bans</title>
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <table>
@@ -14,10 +15,10 @@
 	{{#each data}}
 		<tr>
 			<td>{{this.champion}}</td>
-			<td>{{this.popularity}}%</td>
-			<td>{{this.winRate}}%</td>
-			<td>{{this.banRate}}%</td>
-			<td>{{this.banScore}}</td>
+			<td class="right">{{formatDecimal this.popularity}}%</td>
+			<td class="right">{{formatDecimal this.winRate}}%</td>
+			<td class="right">{{formatDecimal this.banRate}}%</td>
+			<td class="right">{{formatDecimal this.banScore}}</td>
 		</tr>
 	{{/each}}
 </table>
