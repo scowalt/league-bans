@@ -17,6 +17,7 @@ app.set('view engine', 'handlebars');
 // EXPRESS ROUTES
 app.use(require(__dirname + '/routes'));
 app.use(express.static('static'));
+app.use(express.static('bower_components'));
 
 // START SERVER
 var server = app.listen(process.env.PORT || 80, function(){
