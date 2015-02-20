@@ -20,22 +20,13 @@ router.get('/', function (req, res){
 			console.error(error);
 			return onError();
 		}
-		data.sort(compareChampions);
 
 		res.status(200).render('index', {
 			data: data
 		});
 	}
 
-	function compareChampions(a,b){
-		if (a.banScore > b.banScore){
-			return -1;
-		} else if (a.banScore < b.banScore){
-			return 1;
-		} else {
-			return 0;
-		}
-	}
+
 
 	function onError(){
 		res.status(500).send();

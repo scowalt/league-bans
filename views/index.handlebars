@@ -16,6 +16,7 @@
 <div class="container">
 	<table class="table table-striped table-bordered">
 		<thead>
+			<td>Ban Rank</td>
 			<td>Champion</td>
 			<td>Popularity</td>
 			<td>Win Rate</td>
@@ -24,6 +25,7 @@
 		</thead>
 		{{#each data}}
 			<tr>
+				<td>{{this.banRank}}</td>
 				<td>{{this.champion}}</td>
 				<td class="right">{{formatDecimal this.popularity}}%</td>
 				<td class="right">{{formatDecimal this.winRate}}%</td>
