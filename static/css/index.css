@@ -1,3 +1,7 @@
 .right {
 	text-align: right;
 }
+
+thead td {
+	font-weight: bold;
+}
